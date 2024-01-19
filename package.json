@@ -1,0 +1,24 @@
+{
+  "name": "react-basic",
+  "version": "1.0.0",
+  "description": "This is a basic React Start app",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ankurrai1/react-basic.git"
+  },
+  "keywords": [
+    "react",
+    "react-basic",
+    "new-to-react"
+  ],
+  "author": "Ankur Rai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankurrai1/react-basic/issues"
+  },
+  "homepage": "https://github.com/ankurrai1/react-basic#readme"
+}
