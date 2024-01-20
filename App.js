@@ -16,7 +16,7 @@ const parent = React.createElement(
   { id: "parent" },
 
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I am H1 tag"),
+    React.createElement("h1", {}, "I am H1 tag as one"),
     React.createElement("h1", {}, "I am H2 tag"),
   ])
 );
