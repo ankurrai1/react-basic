@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
 /**
  * Create following pattern
  * <div id="parent" >
@@ -11,8 +14,9 @@
 const parent = React.createElement(
   "div",
   { id: "parent" },
+
   React.createElement("div", { id: "child" }, [
-    React.createElement(h1, {}, "I am H1 tag"),
+    React.createElement("h1", {}, "I am H1 tag"),
     React.createElement("h1", {}, "I am H2 tag"),
   ])
 );
@@ -23,5 +27,5 @@ const heading = React.createElement(
   "hello world from react !"
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
-// root.render(parent)
+// root.render(heading);
+root.render(parent)
