@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/ankurrai1/react-basic/issues"
   },
-  "homepage": "https://github.com/ankurrai1/react-basic#readme"
+  "homepage": "https://github.com/ankurrai1/react-basic#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
