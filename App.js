@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 /**
  * Create following pattern
@@ -10,6 +10,19 @@ import ReactDOM from "react-dom";
  *    </div>
  * </div>
  */
+
+const HeadingComponent = () => <h1 className="page-heading" >This is page heading</h1>
+
+const PageComponent = () => {
+  return (
+    <div id="container">
+      <HeadingComponent />
+      <div style={{"height": "200px", "background":"yellow"}}>
+        <h2>page content comes here</h2>
+      </div>
+    </div>
+  )
+}
 
 const parent = React.createElement(
   "div",
@@ -26,6 +39,10 @@ const heading = React.createElement(
   { id: "head" },
   "hello world from react !"
 );
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(heading);
-root.render(parent)
+// root.render(parent)
+root.render(<PageComponent/>)
