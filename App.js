@@ -11,6 +11,10 @@ import ReactDOM from "react-dom/client";
  * </div>
  */
 
+const title = (
+  <h1>hello I am title</h1>
+)
+
 const HeadingComponent = () => <h1 className="page-heading" >This is page heading</h1>
 
 const PageComponent = () => {
@@ -45,4 +49,5 @@ const heading = React.createElement(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(heading);
 // root.render(parent)
+// root.render(title)
 root.render(<PageComponent/>)
